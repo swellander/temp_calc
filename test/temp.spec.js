@@ -14,6 +14,9 @@ describe('The best Temperature Calculator evaaaaa', () => {
     it('exists', () => {
       expect(convertToFfromC).to.be.ok;
     });
+    it('is a function', () => {
+      expect(typeof convertToCfromF).to.equal('function');
+    })
     it('converts from F to C', () => {
       expect(convertToCfromF(32)).to.equal(0);
       expect(convertToCfromF(50)).to.equal(10);
@@ -21,6 +24,12 @@ describe('The best Temperature Calculator evaaaaa', () => {
   });
 
   describe('C to F function', () => {
+    it('exists', () => {
+      expect(convertToFfromC).to.be.ok;
+    });
+    it('is a function', () => {
+      expect(typeof convertToFfromC).to.equal('function');
+    })
     it('converts from C to F', () => {
       expect(convertToFfromC(0)).to.equal(32);
       expect(convertToFfromC(-6.6666666666666666667)).to.equal(20);
